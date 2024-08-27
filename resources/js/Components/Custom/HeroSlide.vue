@@ -12,7 +12,7 @@
             Un seguro que te protege a vos <br />
             <strong class="font-semibold"> y también todo lo que <br> te rodea </strong>
           </h1>
-          <a href="#"
+          <a :href="route('about')"
             class="uppercase max-w-fit font-extrabold text-white bg-teal-500 px-5 py-3 rounded-lg ">conocenos</a>
 
         </div>
@@ -28,7 +28,7 @@
             <strong class="text-blue-900 font-normal">que también protege el <br> hábitat de miles de
               <br>especies</strong>
           </h1>
-          <a href="#" class="uppercase max-w-fit font-extrabold text-white bg-pink-500 px-5 py-3 rounded-lg ">¡lo
+          <a :href="route('service')" class="uppercase max-w-fit font-extrabold text-white bg-pink-500 px-5 py-3 rounded-lg ">¡lo
             quiero!</a>
 
         </div>
@@ -44,7 +44,7 @@
             <strong class="text-blue-900 font-normal">que también protege <br>animales silvestres
             </strong>
           </h1>
-          <a href="#" class="uppercase max-w-fit font-extrabold text-white bg-pink-500 px-5 py-3 rounded-lg">¡lo
+          <a :href="route('service')" class="uppercase max-w-fit font-extrabold text-white bg-pink-500 px-5 py-3 rounded-lg">¡lo
             quiero!</a>
 
         </div>
@@ -60,7 +60,7 @@
             <strong class="font-semibold text-blue-900"> que también protege <br> un recurso vital:<br> el agua
             </strong>
           </h1>
-          <a href="#" class="uppercase max-w-fit font-extrabold text-white bg-pink-500 px-5 py-3 rounded-lg">¡lo
+          <a :href="route('service')" class="uppercase max-w-fit font-extrabold text-white bg-pink-500 px-5 py-3 rounded-lg">¡lo
             quiero!</a>
         </div>
       </div>
@@ -76,7 +76,7 @@
 
             </strong>
           </h1>
-          <a href="#" class="uppercase max-w-fit font-extrabold text-white bg-pink-500 px-5 py-3 rounded-lg">¡lo
+          <a :href="route('service')" class="uppercase max-w-fit font-extrabold text-white bg-pink-500 px-5 py-3 rounded-lg">¡lo
             quiero!</a>
         </div>
       </div>
@@ -92,7 +92,7 @@
 
             </strong>
           </h1>
-          <a href="#" class="uppercase max-w-fit font-extrabold text-white bg-pink-500 px-5 py-3 rounded-lg">¡lo
+          <a :href="route('service')" class="uppercase max-w-fit font-extrabold text-white bg-pink-500 px-5 py-3 rounded-lg">¡lo
             quiero!</a>
         </div>
       </div>

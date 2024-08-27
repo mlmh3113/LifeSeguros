@@ -4,32 +4,31 @@
 
     <Header />
 
-    <div class="max-w-7xl  mx-auto h-screen flex flex-col justify-center items-center">
- <div class=" max-w-7xl  mx-auto p-20 grid grid-cols-2 rounded-md shadow-md shadow-gray-400 border-2 border-teal-500">
+    <div class="w-full md:mt-20 mx-auto md:max-w-7xl px-2 my-5">
+ <div class="grid grid-cols-2 p-2 rounded-md shadow-md shadow-gray-400 md:border-2 md:border-teal-500">
 
-        <div class="col-span-1 flex flex-col justify-evenly px-20">
+        <div class="col-span-2 md:col-span-1 flex flex-col justify-evenly md:px-20 gap-5">
 
             <h1 class="justify-self-start text-4xl font-bold text-teal-500">Contactanos</h1>
 
-            <p class="justify-self-start text-blue-800 text-xl font-medium ">Asegurate de disfrutar con quienes más amás, sabiendo que estás protegido por nosotros.
+            <p class="justify-self-start text-blue-800 text-xl font-medium text-pretty ">Asegurate de disfrutar con quienes más amás, sabiendo que estás protegido por nosotros.
                 Contá con un respaldo económico para vos y tu familia ante las eventualidades de la vida.</p>
 
-            <p class="justify-self-start text-pink-500 text-xl font-medium">
+            <p class="justify-self-start text-pink-500 text-xl font-medium text-pretty" >
                 Con cada póliza que contratás, podés elegir qué proyecto acompañar para ayudar a preservar el medio
                 ambiente.
             </p>
 
         </div>
 
-        <div class="col-span-1 flex flex-col justify-center items-center p-20 bg-gray-300/50 rounded-md">
+        <div class=" col-span-2 md:col-span-1 flex flex-col justify-center items-center mt-5 md:p-20 bg-gray-300/50 rounded-md">
 
             <form class="w-full" @submit.prevent="submit">
 
                 <div>
 
-
                     <TextInput id="fullname" type="text" class="mt-1 block w-full " v-model="form.fullname" required
-                        autocomplete="fullname" placeholder="Nombre y apellido" />
+                        autocomplete="fullname" placeholder="Nombre y apellido" autofocus />
 
                     <InputError class="mt-2" :message="form.errors.fullname" />
                 </div>
@@ -62,7 +61,7 @@
 
                 <div class="flex items-center justify-end mt-4">
                     <button
-                        class="text-white bg-pink-500 uppercase py-2 px-6 border-2 border-[#34D6E2] rounded-md font-bold hover:-translate-y-1 hover:scale-110 duration-500 ease-in-out hover:text-[#34D6E2] hover:border-white">
+                        class="w-full text-white bg-pink-500 uppercase py-2 px-6 border-2 border-[#34D6E2] rounded-md font-bold hover:-translate-y-1 hover:scale-110 duration-500 ease-in-out hover:text-[#34D6E2] hover:border-white">
                         Enviar
                     </button>
                 </div>

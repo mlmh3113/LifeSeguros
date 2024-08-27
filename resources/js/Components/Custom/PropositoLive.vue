@@ -56,7 +56,7 @@
 
         </div>
 
-        <a href="#" class="uppercase max-w-fit font-extrabold text-white bg-teal-500 px-5 py-3 rounded-lg ">Conocé
+        <a :href="route('service')" class="uppercase max-w-fit font-extrabold text-white bg-teal-500 px-5 py-3 rounded-lg ">Conocé
             más</a>
 
     </div>

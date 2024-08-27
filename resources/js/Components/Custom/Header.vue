@@ -1,5 +1,9 @@
 <template>
   <nav class="bg-slate-200 border-gray-200 dark:bg-gray-900 dark:border-gray-700 w-full shadow-md z-40 sticky top-0 ">
+    <div class="max-w-screen flex flex-wrap items-center justify-center mx-auto bg-teal-500 text-white gap-10" :class="tranlate? '' : 'hidden'" >
+      <p class="capitalize font-bold text-sm" >telefono: 0 800 222 4589</p>
+      <p  class="capitalize font-bold text-sm">mail: contacto@live-seguros.com</p>
+    </div>
     <div
       class="flex flex-wrap items-center justify-between mx-auto p-4"
     >
@@ -121,16 +125,19 @@
     
             </div>
           </li>
-          <li>
+          <!-- <li>
             <a
               href="#"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-teal-500 md:p-0 dark:text-white md:dark:hover:text-teal-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Empresas</a
             >
-          </li>
+          </li> -->
 
           <li>
-            <button
+
+            <a :href="route('service')">Contactanos</a>
+
+            <!-- <button
               id="dropdownNavbarLink"
               data-dropdown-toggle="dropdownNavbar"
               class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-teal-500 md:p-0 md:w-auto dark:text-white md:dark:hover:text-teal-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
@@ -152,7 +159,7 @@
                 />
               </svg>
             </button>
-            <!-- Dropdown menu -->
+          
             <div
               id="dropdownNavbar"
               class="z-40 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
@@ -187,36 +194,50 @@
              
               </ul>
     
-            </div>
+            </div> -->
           </li>
 
 
           
           <li>
             <a
-              href="#"
+              :href="route('about')"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-teal-500 md:p-0 dark:text-white md:dark:hover:text-teal-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Quienes Somos</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a
               href="#"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-teal-500 md:p-0 dark:text-white md:dark:hover:text-teal-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Blog</a
             >
-          </li>
-          <li>
+          </li> -->
+          <!-- <li>
             <a
               href="#"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-teal-500 md:p-0 dark:text-white md:dark:hover:text-teal-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Proposito Life</a
             >
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </nav>
 </template>
 
-<script setup></script>
+<script setup>
+
+import { ref } from 'vue';
+
+const tranlate = ref(true);
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    tranlate.value = false;
+  } else {
+    tranlate.value = true;
+  }
+});
+
+</script>

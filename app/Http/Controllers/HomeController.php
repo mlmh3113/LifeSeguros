@@ -25,4 +25,9 @@ class HomeController extends Controller
         return Inertia::render('GetService');  
     }
 
+    public function about()
+    {
+        return Inertia::render('About');  
+    }
+
 }
