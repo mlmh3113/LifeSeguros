@@ -13,6 +13,11 @@ Route::get('/',[HomeController::class,'index'])->name('index');
 Route::get('/get-services',[HomeController::class,'getServices'])->name('services');
 Route::get('/get-service',[HomeController::class,'getService'])->name('service');
 Route::get('/about',[HomeController::class,'about'])->name('about');
+Route::get('/vida',[HomeController::class,'vida'])->name('vida');
+Route::get('/mascota',[HomeController::class,'mascota'])->name('mascota');
+Route::get('/hogar',[HomeController::class,'hogar'])->name('hogar');
+Route::get('/accidentes',[HomeController::class,'accidentes'])->name('accidentes');
+Route::get('/tecnologia',[HomeController::class,'tecnologia'])->name('tecnologia');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

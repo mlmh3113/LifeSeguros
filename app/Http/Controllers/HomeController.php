@@ -30,4 +30,29 @@ class HomeController extends Controller
         return Inertia::render('About');  
     }
 
+    public function vida()
+    {
+        return Inertia::render('VidaView');  
+    }
+
+    public function mascota()
+    {
+        return Inertia::render('MascotaView');  
+    }
+
+    public function hogar()
+    {
+        return Inertia::render('HogarView');  
+    }
+
+    public function accidentes()
+    {
+        return Inertia::render('AccidentesView');  
+    }
+
+    public function tecnologia()
+    {
+        return Inertia::render('TecnologiaView');  
+    }
+
 }

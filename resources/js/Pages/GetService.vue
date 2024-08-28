@@ -4,7 +4,7 @@
 
     <Header />
 
-    <div class="w-full md:mt-20 mx-auto md:max-w-7xl px-2 my-5">
+    <div class="w-full md:mt-20 mx-auto md:max-w-7xl px-2">
  <div class="grid grid-cols-2 p-2 rounded-md shadow-md shadow-gray-400 md:border-2 md:border-teal-500">
 
         <div class="col-span-2 md:col-span-1 flex flex-col justify-evenly md:px-20 gap-5">
@@ -21,7 +21,7 @@
 
         </div>
 
-        <div class=" col-span-2 md:col-span-1 flex flex-col justify-center items-center mt-5 md:p-20 bg-gray-300/50 rounded-md">
+        <div class="mt-5 md:mt-0 col-span-2 md:col-span-1 flex flex-col justify-center items-center md:p-20  rounded-md md:bg-[url('https://res.cloudinary.com/dkoocayxp/image/upload/v1724886642/lifeseg/hero-proposito-life-desktop_xgdp8b.jpg');] bg-cover"  >
 
             <form class="w-full" @submit.prevent="submit">
 
@@ -75,6 +75,9 @@
 
     </div>
     </div>
+
+
+    <Footer />
     
 
    
@@ -82,6 +85,7 @@
 
 <script setup>
 import Header from '../Components/Custom/Header.vue';
+import Footer from '../Components/Custom/Footer.vue';
 import { Head } from '@inertiajs/vue3';
 import { ref } from 'vue';
 import InputError from '@/Components/InputError.vue';

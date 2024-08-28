@@ -4,17 +4,27 @@
 
     <Header />
 
-    <div class=" grid grid-cols-3 my-20 w-full md:mt-20 px-20 md:max-w-7xl mx-auto bg-gray-200 p-20 rounded-md border-2 border-teal-500 shadow-md shadow-gray-400  ">
+    <div class="flex flex-col gap-5 md:grid md:grid-cols-3 my-20 w-full md:mt-20 md:max-w-7xl mx-auto bg-gray-200 p-2 py-10 md:p-20 rounded-md border-2 border-teal-500 shadow-md shadow-gray-400  ">
 
-        <div class="col-span-1 flex flex-col gap-5 justify-start">
+        <div class="md:col-span-1 flex flex-col justify-around text-left">
 
+            <div>
+                
             <p class="text-pretty text-6xl font-bold text-teal-500">Desde <span>1922</span></p>
             <p class="text-pretty text-2xl font-bold text-blue-500">Sembrando tranquilidad</p>
+            </div>
+
+
+            <div class=" hidden md:flex justify-start w-full">
+                  <img class="w-1/2 rounded-full h-full " src="https://res.cloudinary.com/dkoocayxp/image/upload/v1724720173/lifeseg/insurance_fic5zr.png" alt="">
+            </div>
+
+          
 
             
         </div>
 
-        <div class="col-span-2 flex flex-col gap-5">
+        <div class="md:col-span-2 flex flex-col gap-5">
 
             <p class="text-pretty">Fundada a principios del Siglo XX (30 de Mayo de 1922), su espíritu cooperativo ha permanecido intacto a
                 través de los años tendiendo a favorecer a los agricultores que la conforman, abonando los daños en
